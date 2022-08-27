@@ -1,6 +1,7 @@
-const accordionQuestion = document.querySelectorAll(".question");
+const accordionQestion = document.querySelectorAll(".question");
+const questionAns = document.querySelector(".accordion-ans");
 
-accordionQuestion.forEach((question) => {
+accordionQestion.forEach((question) => {
   question.addEventListener("click", () => {
     if (question.parentElement.classList.contains("active")) {
       question.parentElement.classList.toggle("active");

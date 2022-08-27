@@ -80,6 +80,7 @@ body {
 .icon {
   width: 12px;
   justify-self: center;
+  transition: all 0.4s ease;
 }
 .accordion-ans {
   font-size: 18px;
@@ -102,7 +103,6 @@ body {
 }
 .active .icon {
   transform: rotate(180deg);
-  transition: all 0.4s ease;
 }
 .active .accordion-ans p {
   transition: all 0.4s;
