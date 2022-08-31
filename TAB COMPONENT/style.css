@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: #5ec576;
+  --color-secondary: #ffcb03;
+  --color-tertiary: #ff585f;
+  --color-primary-darker: #4bbb7d;
+  --color-secondary-darker: #ffbb00;
+  --color-tertiary-darker: #fd424b;
+  --color-primary-opacity: #5ec5763a;
+  --color-secondary-opacity: #ffcd0331;
+  --color-tertiary-opacity: #ff58602d;
+  --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+  --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+body {
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 16px 45px;
+  outline: none;
+  border: none;
+  background-color: var(--color-primary);
+  font-weight: 500;
+  transition: all 0.3s;
+  border-radius: 50px;
+  color: #444;
+}
+.btn:hover {
+  background-color: var(--color-primary-darker);
+}
+.container {
+  max-width: 50rem;
+  margin: auto;
+  background-color: #fff;
+}
+.btn-tab-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.operations__tab {
+  margin-right: 32px;
+  transform: translateY(-50%);
+}
+.operations__tab span {
+  margin-right: 18px;
+  font-weight: 600;
+  display: inline-block;
+}
+.operation-tab-1 {
+  background-color: var(--color-secondary);
+}
+.operation-tab-1:hover {
+  background-color: var(--color-secondary-darker);
+}
+.operation-tab-3 {
+  background-color: var(--color-tertiary);
+  margin: 0;
+}
+.operation-tab-3:hover {
+  background-color: var(--color-tertiary-darker);
+}
+.operation-tab-active {
+  transform: translateY(-66%);
+}
+
+.operation-contents {
+  display: none;
+}
+.operation-content-active {
+  display: grid;
+}
+.operation-header {
+  margin: 32px 50px;
+  font-size: 32px;
+  line-height: 1.8;
+}
+.bg {
+  background-color: red;
+  color: white;
+}
+.operation-contents p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0 50px 50px 50px;
+}
